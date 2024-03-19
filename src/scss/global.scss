@@ -1,0 +1,28 @@
+:root {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--body-col);
+}
+
+.cur-pointer {
+    cursor: pointer;
+}
+
+.round-btn-container {
+    background-color: var(--primary-col);
+    padding: 7px 10px;
+    border-radius: 4px;
+
+    &__icon {
+        color: white;
+        width: 18px !important;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    &__title {
+        color: white;
+    }
+}

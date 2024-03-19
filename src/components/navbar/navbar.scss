@@ -1,0 +1,26 @@
+.navbar-container-main {
+    position: fixed;
+    top: 0px;
+    height: clamp(75px, 75px, 75px);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.logo {
+    color: var(--primary-col);
+}
+
+.navigation-container {
+    list-style-type: none;
+}
+
+.navigation-links {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active-navigation {
+    color: rgb(252, 72, 102);
+}

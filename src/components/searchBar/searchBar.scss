@@ -1,0 +1,17 @@
+.search-feild-container {
+    border-radius: 4px;
+    padding: 7px 10px;
+    background-color: rgb(239, 240, 246);
+    width: 200px;
+    
+    &__input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        width: 90%;
+    }
+
+    &__search-icon {
+        color: grey
+    }
+}
