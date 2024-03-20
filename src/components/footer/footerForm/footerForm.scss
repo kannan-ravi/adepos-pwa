@@ -1,0 +1,36 @@
+.footer-form {
+  padding: 8px;
+  background-color: var(--body-col);
+  border-radius: 6px;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  input {
+    padding: 0 6px 0 6px;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+
+  button {
+    background-color: var(--primary-col);
+    color: var(--secondary-col);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    border: 2px solid var(--primary-col);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary-col);
+
+    }
+  }
+}
