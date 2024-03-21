@@ -1,0 +1,35 @@
+.menu-card-container {
+  gap: 1rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.menu-card-header {
+  padding: 1rem 0;
+  h1 {
+    color: var(--primary-col);
+    font-size: 26px;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    background-color: rgba(43, 137, 114, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    color: var(--primary-col);
+    padding: 10px 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--primary-col);
+      color: var(--secondary-col);
+    }
+  }
+}
+
+.custom-swiper-slide {
+  width: fit-content !important;
+}

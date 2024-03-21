@@ -1,12 +1,25 @@
 import React from "react";
-import "./menuCards.scss";
+import "./menus.scss";
 import MenuCard from "./menuCard/menuCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
 
-const MenuCards = ({ demoMenuCard, selectedCard, setSelectedCard }) => {
+import { FreeMode } from "swiper/modules";
+import { Link } from "react-router-dom";
+
+const Menus = ({
+  demoMenuCard,
+  selectedCard,
+  setSelectedCard,
+  isHeaderVisible,
+}) => {
   return (
     <div className="menu-card-container">
+      {isHeaderVisible && (
+        <div className="flex-between-center menu-card-header">
+          <h1>Our Menu</h1>
+          <Link to="/menu">View All</Link>
+        </div>
+      )}
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
@@ -31,4 +44,4 @@ const MenuCards = ({ demoMenuCard, selectedCard, setSelectedCard }) => {
   );
 };
 
-export default MenuCards;
+export default Menus;

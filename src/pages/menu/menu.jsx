@@ -8,8 +8,8 @@ import "swiper/css/free-mode";
 import "./menu.scss";
 
 import { useState } from "react";
-import MenuCards from "../../components/menuCards/menuCards";
-import ItemCards from "../../components/itemCards/itemCards";
+import Menus from "../../components/menus/menus";
+import Items from "../../components/items/items";
 
 const Menu = () => {
   const demoMenuCard = [
@@ -62,10 +62,12 @@ const Menu = () => {
 
   const [selectedCard, setSelectedCard] = useState("Appetizers");
 
+  const [isGridView, setIsGridView] = useState(false);
+  const demoItemCard = [1, 2, 3, 4, 5, 6];
   return (
     <div className="gap-from-navbar">
       <Container>
-        <MenuCards
+        <Menus
           demoMenuCard={demoMenuCard}
           selectedCard={selectedCard}
           setSelectedCard={setSelectedCard}
@@ -82,7 +84,12 @@ const Menu = () => {
           </button>
         </div>
 
-        <ItemCards />
+        <Items
+          isGridView={isGridView}
+          setIsGridView={setIsGridView}
+          demoItemCard={demoItemCard}
+          gridListOption={true}
+        />
       </Container>
     </div>
   );

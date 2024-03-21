@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/navbar";
 import NotFound from "./pages/notFound/notFound";
 import "./scss/import.scss";
 import Footer from "./components/footer/footer";
+import SingleOffer from "./pages/singleOffer/singleOffer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/menu" element={<Menu />} />
         <Route exact path="/offers" element={<Offers />} />
+        <Route exact path="/offers/single-offer" element={<SingleOffer />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes>
       <Footer />
