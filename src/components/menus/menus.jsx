@@ -2,7 +2,6 @@ import React from "react";
 import "./menus.scss";
 import MenuCard from "./menuCard/menuCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { FreeMode } from "swiper/modules";
 import { Link } from "react-router-dom";
 

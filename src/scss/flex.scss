@@ -53,7 +53,7 @@
 }
 
 .flex-start-center {
-    display: flex;
+    display: flex !important;
     justify-content: flex-start;
     align-items: center;
 }

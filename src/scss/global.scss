@@ -14,7 +14,7 @@ body {
     background-color: var(--primary-col);
     padding: 7px 10px;
     border-radius: 4px;
-
+    min-width: 88px !important;
     &__icon {
         color: white;
         width: 18px !important;
