@@ -1,27 +1,27 @@
 .navbar-container-main {
-    position: fixed;
-    top: 0px;
-    height: clamp(75px, 75px, 75px);
-    padding: 10px 40px;
-    box-sizing: border-box;
-    background-color: white;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-    z-index: 2;
+    position: fixed !important;
+    top: 0px !important;
+    height: clamp(75px, 75px, 75px) !important;
+    padding: 10px 40px !important;
+    box-sizing: border-box !important;
+    background-color: white !important;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px !important;
+    z-index: 2 !important;
 }
 
 .logo {
-    color: var(--primary-col);
+    color: var(--primary-col) !important;
 }
 
 .navigation-container {
-    list-style-type: none;
+    list-style-type: none !important;
 }
 
 .navigation-links {
-    font-weight: 600;
-    cursor: pointer;
+    font-weight: 600 !important;
+    cursor: pointer !important;
 }
 
 .active-navigation {
-    color: var(--primary-col);
+    color: var(--primary-col) !important;
 }
